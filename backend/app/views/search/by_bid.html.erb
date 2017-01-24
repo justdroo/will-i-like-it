@@ -1,0 +1,5 @@
+<%= form_tag("/beer/new", method: "get") do %>
+  <%= label_tag(:q, "Beer ID (bid):") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search") %>
+<% end %>

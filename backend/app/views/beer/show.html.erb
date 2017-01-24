@@ -1,0 +1,13 @@
+<% if @beer.too_bitter%>
+  <h2>NO. This beer is probably too bitter for you</h2>
+<% else  %>
+  <h2>YES. This beer shouldn't be too bitter</h2>
+<% end %>
+<h1><%= @beer.name %></h1>
+<img src="<%= @beer.label %>" alt="">
+<h3> <%= @beer.style %></h3>
+<h3> Untapped Rating: <%= @beer.rating %> </h3>
+<h3>ABV: <%= @beer.abv %></h3>
+<h3>Description:</h3>
+<p> <%= @beer.brewery_name %> from <%= @beer.brewery_state %></p>
+<p><%= @beer.description %></p>
